@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className={styles.people}>
         {people.map((person) => {
           return (
-            <div className={styles.person}>
+            <div key={person.name} className={styles.person}>
               <div className={styles.imgContainer}>
                 <img src={person.picture} />
               </div>
