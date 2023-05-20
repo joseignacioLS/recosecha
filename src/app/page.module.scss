@@ -1,0 +1,30 @@
+@import "../styles/variables";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: $_cream;
+
+  color: $_green;
+
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
+.product {
+  background-color: $_green;
+  color: $_cream;
+}
+
+.calendar {
+  background-color: $_cream;
+  color: $_green;
+}

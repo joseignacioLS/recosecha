@@ -1,0 +1,55 @@
+@import "../styles/variables";
+
+.description {
+  text-align: center;
+}
+
+.people {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+
+  .person {
+    max-width: 20rem;
+    width: 90%;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+
+    text-align: center;
+
+    box-shadow: 6px 6px 0px $_cream, -6px -6px 0 $_cream;
+    border-radius: 1rem;
+
+    transition: box-shadow .3s;
+
+    &:hover {
+      box-shadow: -6px 6px 0px $_cream, 6px -6px 0 $_cream;
+
+    }
+
+    .imgContainer {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      background-color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
