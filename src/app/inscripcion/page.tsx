@@ -1,6 +1,5 @@
 "use client";
 
-import MoreInfoCard from "@/components/Calendar/MoreInfoCard";
 import { event, getEventById } from "@/services/api.service";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -9,7 +8,7 @@ import styles from "./page.module.scss";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
-const page = ({}) => {
+const Page = ({}) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [event, setEvent] = useState<event | undefined>(undefined);
@@ -68,4 +67,4 @@ const page = ({}) => {
   );
 };
 
-export default page;
+export default Page;
