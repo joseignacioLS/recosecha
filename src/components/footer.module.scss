@@ -1,7 +1,12 @@
 @import "../styles/variables";
 
 .footer {
+  position: relative;
+  
   width: 100%;
+  
+  z-index: 3;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr auto;
