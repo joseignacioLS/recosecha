@@ -15,14 +15,6 @@
     top: 1rem;
     right: 1rem;
 
-    background-color: $_pink;
-    padding: 1rem;
-    border-radius: 100rem;
-
-
-    color: $_cream;
-    text-decoration: none;
-
     transition: scale .3s;
     &:hover {
       scale: 1.05;

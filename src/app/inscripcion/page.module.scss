@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.incribeteSection {
+  margin-top: 1rem;
+}
+
+.eventInfo {
+  background-color: $_blue;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: $_cream;
+  text-align: center;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}

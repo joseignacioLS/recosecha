@@ -7,11 +7,14 @@ import Footer from "@/components/Footer";
 import Calendar from "@/components/Calendar/Calendar";
 import Info from "@/components/Info";
 import Modal from "@/components/Modal";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ModalContext } from "@/contexts/modal.context";
 
 const Home = () => {
-  const { isVisible } = useContext(ModalContext);
+  const { isVisible, hideModal } = useContext(ModalContext);
+  useEffect(() => {
+    hideModal();
+  }, []);
   return (
     <>
       <main className={styles.main}>
