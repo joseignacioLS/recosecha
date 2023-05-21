@@ -1,0 +1,60 @@
+@import "../styles/variables";
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-image: url("/images/IMG20230507194409.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  color: $_green;
+
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 20rem;
+    mix-blend-mode: multiply;
+    z-index: 1;
+  }
+
+  h2 {
+    color: $_green;
+    text-shadow: 0px 0px 10px white;
+    z-index: 1;
+  }
+}
+
+.bgFilter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, .2),
+      rgba(255, 255, 255, .7),
+      rgba(255, 255, 255, .9),
+      rgba(255, 255, 255, .7),
+      rgba(255, 255, 255, .2));
+  z-index: 0;
+}
+
+.bgEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg,
+      $_cream 15%,
+      rgba(255, 255, 255, 0) 15%,
+      rgba(255, 255, 255, 0) 85%,
+      $_cream 85%);
+  z-index: 0;
+
+}

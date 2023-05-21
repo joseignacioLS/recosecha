@@ -31,8 +31,13 @@ const AboutUs = () => {
               <div className={styles.imgContainer}>
                 <img src={person.picture} />
               </div>
-              <h4>{person.name}</h4>
-              <p>{person.description}</p>
+              <h4 className={styles.personName}>
+                <img src="images/artichoke-svgrepo-com.svg" />
+                {person.name}
+
+                <img src="images/artichoke-svgrepo-com.svg" />
+              </h4>
+              <p className={styles.personDescription}>{person.description}</p>
             </div>
           );
         })}

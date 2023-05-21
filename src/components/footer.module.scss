@@ -1,0 +1,35 @@
+@import "../styles/variables";
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "rs disc"
+    "copyr copyr";
+  gap: 1rem;
+
+  padding: 1rem;
+
+  >div {
+    max-width: 20ch;
+    justify-self: center;
+  }
+
+  h5 {
+    max-width: 20ch;
+    border-bottom: 1px solid $_green;
+    text-align: center;
+  }
+
+  ul {
+    grid-area: disc;
+    list-style: none;
+  }
+
+  .copyright {
+
+    grid-area: copyr;
+    text-align: center;
+  }
+}

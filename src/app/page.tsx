@@ -1,25 +1,21 @@
 import AboutUs from "@/components/AboutUs";
 import styles from "./page.module.scss";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import Calendar from "@/components/Calendar/Calendar";
+import Info from "@/components/Info";
 
 const Home = () => {
   return (
-    <main className={styles.main}>
-      <section className={styles.hero}>
-        <h1>
-          <img src="/images/logo.png" alt="Logo de la marca Recosecha" />
-        </h1>
-        <h2>Conectado el campo con la ciudad</h2>
-      </section>
-      <section className="darkSection">
-        <h3 className="sectionTitle">¿Qué es recosecha?</h3>
-        <p></p>
-      </section>
-      <section className="lightSection">
-        <h3 className="sectionTitle">Próximos eventos</h3>
-        <p></p>
-      </section>
-      <AboutUs />
-    </main>
+    <>
+      <main className={styles.main}>
+        <Hero />
+        <Info />
+        <Calendar />
+        <AboutUs />
+      </main>
+      <Footer />
+    </>
   );
 };
 
