@@ -6,23 +6,23 @@ import Link from "next/link";
 const links = [
   {
     name: "Twitter",
-    url: "x",
-    icon: "x",
+    url: "",
+    icon: "images/rrss/twitter.svg",
   },
   {
     name: "Instagram",
-    url: "x",
-    icon: "x",
+    url: "",
+    icon: "images/rrss/instagram.svg",
   },
   {
     name: "Linkedin",
-    url: "x",
-    icon: "x",
+    url: "",
+    icon: "images/rrss/linkedin.svg",
   },
   {
     name: "Tiktok",
-    url: "x",
-    icon: "x",
+    url: "",
+    icon: "images/rrss/tiktok.svg",
   },
 ];
 
@@ -34,9 +34,9 @@ const Footer = () => {
         <ul>
           {links.map((link) => {
             return (
-              <li key={link.name}>
+              <li key={link.name} className={styles.rrssLink}>
                 <img src={link.icon} />
-                <Link href={link.url}>{link.name}</Link>
+                <Link href={link.url} target="_blank">{link.name}</Link>
               </li>
             );
           })}

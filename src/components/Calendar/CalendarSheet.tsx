@@ -12,7 +12,6 @@ const CalendarSheet = ({
   setFilter: (filter: string) => void;
   filter: string;
 }) => {
-  console.log(eventDates);
   const [originDate, setOriginDate] = useState(new Date());
   useEffect(() => {
     const dayOfTheWeek = originDate.getDay() > 0 ? originDate.getDay() : 7;

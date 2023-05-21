@@ -7,6 +7,7 @@
 
   @media (min-width: 800px) {
     grid-template-columns: 300px 1fr;
+    gap: 3rem;
   }
 }
 
@@ -56,6 +57,8 @@
 
     transition: box-shadow .3s;
 
+    animation: fadein .6s ease forwards;
+
     &:hover {
 
       box-shadow: -6px 6px 0 $_green, 6px -6px 0 $_green;
@@ -100,4 +103,14 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

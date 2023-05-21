@@ -2,9 +2,9 @@
 
 .footer {
   position: relative;
-  
+
   width: 100%;
-  
+
   z-index: 3;
 
   display: grid;
@@ -30,6 +30,21 @@
   ul {
     grid-area: disc;
     list-style: none;
+
+    .rrssLink {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      a {
+        color: $_green;
+        text-decoration: none;
+      }
+
+      img {
+        height: 2ch;
+      }
+    }
   }
 
   .copyright {

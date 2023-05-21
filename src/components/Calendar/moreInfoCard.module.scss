@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.moreInfoCard {
+  position: relative;
+  color: $_blue;
+  width: 100%;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-rows: 400px auto auto;
+  gap: 1rem;
+
+  .inscribete {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    background-color: $_pink;
+    padding: 1rem;
+    border-radius: 100rem;
+
+
+    color: $_cream;
+    text-decoration: none;
+
+    transition: scale .3s;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .cardTitle {
+    border-bottom: 1px solid $_darkCream;
+  }
+
+  .details {
+    color: $_darkCream;
+    font-size: 1rem;
+  }
+
+}
